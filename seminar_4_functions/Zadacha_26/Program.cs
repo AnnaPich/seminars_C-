@@ -3,7 +3,7 @@
 
 int QuantityDigit (int number)
 {
-    int i = 1;
+    int i;
     for (i = 1; number > 10; i++)
     {
         number = number/10;
