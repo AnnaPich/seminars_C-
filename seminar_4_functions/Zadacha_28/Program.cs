@@ -11,17 +11,17 @@ int ResultProduct (int number)
 }
 
 
-int DataEntryN (string str)
+int DataEntryN(string str)
 {
     Console.Write(str);
     int number = int.Parse(Console.ReadLine());
     return number;
-}   
+}
 
 //Программа:
 
 Console.Clear();
 
-int digitN = DataEntryN ("Введите число N: ");
-int result = ResultProduct(digitN); 
-Console.Write(digitN +"-> " + result);
+int digitN = DataEntryN("Введите число N: ");
+int result = ResultProduct(digitN);
+Console.Write(digitN + "-> " + result);
