@@ -3,7 +3,14 @@
 //положительные элементы замените на соответствующие отрицательные, и наоборот.
 //[-4, -8, 8, 2] -> [4, 8, -8, -2]
 
-int[] arr = { -4, -8, 8 ,2};
+
+void SelectionSort(int[] array)
+{
+    for (int i = 0; i < array.Length - 1; i++)
+    {
+        array[i] = array[i] * -1;
+    }
+}
 
 void PrintArray(int[] array)
 {
@@ -15,13 +22,8 @@ void PrintArray(int[] array)
     Console.WriteLine();
 }
 
-void SelectionSort(int[] array)
-{
-    for (int i = 0; i < array.Length - 1; i++)
-    {
-        array[i] = array[i] * -1;
-    }
-}
+int[] arr = { -4, -8, 8 ,2};
+
 PrintArray(arr);
 SelectionSort(arr);
 PrintArray(arr);
