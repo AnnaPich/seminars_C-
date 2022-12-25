@@ -50,3 +50,4 @@ int columns = DataEntyNumber("Введите число столбцов n: ");
 
 int[,] matrix = FillArrayWithRandomNumbers(rows, columns, LEFT_RANGE, RIGHT_RANGE);
 
+PrintMatrix(matrix);
